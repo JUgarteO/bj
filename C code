@@ -2,7 +2,9 @@
 //"creación registro y posicionamiento RAND automático"
 //Date of creation: Dec 7, 2019
 
-//[a.max=6, m.max=10]; [6S/M]  6S*10M (cant total)
+a.m=6;
+m.max=10; //(6s/m)
+total.r=a.max*m.max=(s.max=600; por juego)
 
 xdel(winsid());
 clear;
@@ -12,7 +14,7 @@ disp('Creación Registro BJ');
 jugador=struct('nombre',' ','apellido',' ','rut',' ');
 j=input('ingrese cantidad de jugadores: ');
 m=input('ingrese cantidad de mesas a jugar: ');
-a=60;   //total asientos
+a=60;   //total asientos x juego
 for i=1:n
     printf('Jugador #%d\n',i); 
     jugador(i).nombre=input('ingrese nombre: ','s');
