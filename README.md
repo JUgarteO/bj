@@ -1,1 +1,1 @@
-Proyecto que permite determinar posicionamiento matricial (xxxxx,yy) de jugadores determinado por cant participantes por ronda.
+Proyecto que permite determinar posicionamiento matricial (xxxxx,yy) de jugadores determinado por la cantidad de participantes por ronda, estos se ingresan de forma manual. Se debe ingresar: cantidad de mesas a ocupar, los ID y luego se muestra una matriz con las ucicaciones de cada ID.
