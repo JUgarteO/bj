@@ -1,0 +1,36 @@
+//Copyright (C) {$2019} - Ing. Jorge Ugarte Olguín
+//"creación registro y posicionamiento RAND automático"
+//Date of creation: Dec 7, 2019
+
+//[a.max=6, m.max=10]; [6S/M]  6S*10M (cant total)
+
+xdel(winsid());
+clear;
+clc;
+
+disp('Creación Registro BJ');
+jugador=struct('nombre',' ','apellido',' ','rut',' ');
+j=input('ingrese cantidad de jugadores: ');
+m=input('ingrese cantidad de mesas a jugar: ');
+a=60;   //total asientos
+for i=1:n
+    printf('Jugador #%d\n',i); 
+    jugador(i).nombre=input('ingrese nombre: ','s');
+    jugador(i).apellido=input('ingrese apellido: ','s');
+    jugador(i).ID=input('ingrese ID: ');
+end
+disp('LISTADO DE JUGADORES  REGISTRADOS EN EL TORNEO');
+printf('tID\n' );
+for i=1:j
+    nombre=jugador(i).nombre;
+    apellido=jugador(i).apellido;
+    ID=jugador(i).rut;
+    printf('%s\t%s\t%d\n',nombre,apellido,ID);
+
+num.mesas=ceil(j/6); //num.mesas=jugadores(j)/asientos(a), aproximados<
+//x=num.mesas;
+//disp(x)
+y=ceil(n/m);
+//printf('La cantidad de participantes por mesa es de: %s, (n/6) %d);
+
+end
