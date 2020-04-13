@@ -24,15 +24,13 @@ end
 disp('LISTADO DE JUGADORES  REGISTRADOS EN EL TORNEO');
 printf('tID\n' );
 for i=1:j
-    nombre=jugador(i).nombre;
-    apellido=jugador(i).apellido;
     ID=jugador(i).rut;
     printf('%s\t%s\t%d\n',nombre,apellido,ID);
 
-num.mesas=ceil(j/6); //num.mesas=jugadores(j)/asientos(a), aproximados<
-//x=num.mesas;
-//disp(x)
+num.mesas=ceil(j/6); //num.mesas=jugadores(j)/asientos(a) (aproximados<)
+x=num.mesas;
+disp(x)
 y=ceil(n/m);
-//printf('La cantidad de participantes por mesa es de: %s, (n/6) %d);
+printf('La cantidad de participantes por mesa es de: %s, (n/6) %d);
 
 end
