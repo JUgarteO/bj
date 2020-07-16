@@ -10,24 +10,21 @@
 <script>
 function oninputFunct()	{
 	var jugadores = +document.getElementById("0-value").value;
-  //var mesas = +document.getElementById("1-value").value;
 	var nm = jugadores / 6 ;
 	var jm = jugadores / (Math.ceil(nm)) ;
 	var ronda = jugadores / 60 ;
 	document.getElementById("output1").innerHTML = "Mesas a ocupar: " + (Math.ceil(nm)) ;
 	document.getElementById("output3").innerHTML = "Rondas: " + (Math.ceil(ronda)) ;
-	document.getElementById("output2").innerHTML = "Jugadores por mesa ≈ " + (Math.round(jm)) ;
+	document.getElementById("output2").innerHTML = "Jugadores por mesa ≈ " + (Math.trunc(jm));
 	//if(nm>10)	{
-	//	alert("se deben hacer más rondas")
-	//			}
-						}
+	//	alert("se deben hacer más rondas")  }
+						}			
 </script>
 </head>
 <body>
 <div class="container-fluid">
 <h1 style="text-align:center;">Distribución mesas "Black Jack"</h1>
 <p style="text-align:center;"><label>Ingrese nº jugadores inscritos </label><input type="tel" pattern="[0-9]*" placeholder="Ingrese nº jugadores" min="0" id="0-value" oninput="oninputFunct()"></p>
-<!--<p style="text-align:center;"><input type="tel" pattern="[0-9]*" placeholder="Ingrese nº mesas" min="0" id="1-value" oninput="oninputFunct()"></p>-->
 <p style="text-align:center;" id="output1"></p>
 <p style="text-align:center;" id="output2"></p>
 <p style="text-align:center;" id="output3"></p>
